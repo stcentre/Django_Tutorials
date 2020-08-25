@@ -1,0 +1,18 @@
+{% extends 'myapp/main.html' %}
+
+{% block body %}
+
+<h2>
+	Update {{ data.name }}
+</h2>
+
+<form method="post" action="">
+		{% csrf_token %}
+		<table width="2" border="2">
+			{{form}}
+		</table>
+	<input type="submit" name="done" value="Done">
+</form>
+
+
+{% endblock %}}
